@@ -9,14 +9,15 @@ function showQuestions(arr, points) {
                 <hr class="my-3"/>
                 ${item.answerList.map(q => {
             return `
-                    <div class="form-check">
+                    <div class="form-check pl-3 py-2">
                         <input class="form-check-input answer" type="radio" value="${q}" name="${item.question}" id="${i}">
-                        <label class="form-check-label" for="${q}">
+                        <label class="form-check-label ps-2" for="${q}">
                             ${q}
                         </label>
+                        <hr/>
                     </div>
                     `
-        })}
+        }).join(" ")}
         <div class="d-grid gap-2 col-6 mx-auto my-3">
             <button class="btn btn-primary submit-btn" type="button" value="${item.answer}" data-index="${i + 1}">SUBMIT</button>
         </div>

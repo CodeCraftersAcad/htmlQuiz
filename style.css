@@ -1,11 +1,24 @@
+:root {
+    --white: #fffffc;
+    --grey: #f2f2f2;
+    --yellow: #f0c808;
+    --red: #e94f37;
+    --light-blue: #4299e1;
+    --dark-blue: #161a1e;
+    --header-lg: 7.5rem;
+    --header-md: 4.37rem;
+    --header-sm: 2.25rem;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body {
-    overflow: hidden;
+body,
+html {
+    overflow-x: hidden;
 }
 
 .question {
@@ -27,7 +40,31 @@ body {
     transition: all 4s linear;
 }
 
+footer.footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+}
+
+footer.footer .btn {
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+    border-radius: 0;
+    width: 200px;
+}
+
+footer #contact_email {
+    text-decoration: none;
+    color: var(--white);
+}
+
 @media screen and (max-width: 460px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
     .inner-question {
         width: 90%;
     }

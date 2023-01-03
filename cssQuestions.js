@@ -30,10 +30,10 @@ const cssQuestions = [
         ["{ h1 text-align: center; }", "h1 { text-align: center; }", "h1 { text-center: align; }", "h1 { center-align: text; }",]
     ),
     new Question(
-        `Which is the correct syntax to keep an image at scale with a height of 300px?`,
+        `Which is the correct syntax to keep an image at scale with a height of 300 pixels?`,
         `style="height: 300px; width: auto;`,
         [`style="height: 300px; width: auto;`,
-        `style="height: 300pixels; width: auto;`,
-        `style="height: 300px; width: scale;`]
+            `style="height: 300pixels; width: auto;`,
+            `style="height: 300px; width: scale;`]
     )
 ]
