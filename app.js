@@ -1,17 +1,33 @@
 const quizBody = document.querySelector("#quiz-body");
 let points = 0;
 let chosenAnswer;
+let questions = [];
+
+// change questions depending on which html doc is displayed
+if(window.location.pathname === "/htmlQuiz.html"){
+    questions = htmlQuestions
+}else if(window.location.pathname === "/cssQuiz.html"){
+    questions = cssQuestions
+}
+
+// loops thru answer classes
 document.addEventListener("click", e => {
     if (e.target.classList.contains("answer")) {
         setChosenAnswer(`${e.target.value}`)
     }
 });
+
+// sets answer to whatever is clicked
 function setRightAnswer(answer) {
     return answer;
 }
+
+// checks if right answer
 function setChosenAnswer(answer) {
     chosenAnswer = answer;
 }
+
+// changes button depending on if answer is correct
 document.addEventListener("click", e => {
     if (e.target.classList.contains("submit-btn")) {
         if (chosenAnswer === e.target.value) {
@@ -23,7 +39,7 @@ document.addEventListener("click", e => {
             e.target.classList.add("btn-success");
             e.target.innerText = "GOOD JOB"
             points++;
-            checkIfDone();
+            checkIfDone(questions);
         } else {
             e.target.classList.remove("btn-primary");
             e.target.classList.add("btn-danger");
@@ -33,9 +49,11 @@ document.addEventListener("click", e => {
 });
 
 window.addEventListener("load", () => {
-    checkIfDone();
+    checkIfDone(questions);
 });
-function checkIfDone() {
+
+// if all answers are correct
+function checkIfDone(questions) {
     if (points < questions.length) {
         // quizBody.innerHTML = "";
         showQuestions(questions, points);
@@ -52,3 +70,4 @@ function checkIfDone() {
         `
     }
 }
+checkIfDone(questions);
