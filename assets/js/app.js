@@ -70,3 +70,4 @@ function checkIfDone(questions) {
     }
 }
 checkIfDone(questions);
+console.log(window.location.pathname.includes("html"))
