@@ -47,9 +47,10 @@ html {
 }
 
 footer.footer {
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
     color: var(--white);
     text-align: center;
+    /* background-image: url("./assets/image/quiz_idea.png"); */
 }
 
 footer.footer .btn {

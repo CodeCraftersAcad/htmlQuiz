@@ -17,9 +17,34 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="./index.html" class="navbar-brand">PTD Quiz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="./assets/pages/htmlQuiz.html" class="nav-link">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./assets/pages/cssQuiz.html" class="nav-link">CSS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <main id="home-main">
-        <h1 class="text-center">Part Time Quizzes</h1>
-        <h3 class="text-center">Choose a quiz</h3>
+        <header class="hero"
+            style="background-image: url('./assets/image/quiz_idea_y.png'); background-size: cover; background-repeat: no-repeat; height: 300px; display: flex; justify-content: center; align-items: center; background-position: -10px; background-size: 110%;">
+            <div>
+                <h1 class="text-center" style="font-size:60px"><b>Part Time Quizzes</b></h1>
+                <h3 class="text-center"><b>Choose a quiz</b></h3>
+            </div>
+        </header>
         <div class="p-5">
             <h3 class="">What is HTML</h3>
             <p class="">HTML stands for Hyper Text Markup Language
@@ -45,7 +70,7 @@
                     style="border-radius:0; width: 250px;" class="btn btn-primary btn-md">CSS Quiz</a></p>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" style="background-image:url('./assets/image/quiz_idea.png')">
         <div class="p-3">
             <div>
                 <p>Email: <a id="contact_email"
