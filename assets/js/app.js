@@ -4,9 +4,9 @@ let chosenAnswer;
 let questions = [];
 console.log(window.location.pathname)
 // change questions depending on which html doc is displayed
-if (window.location.pathname === "/assets/pages/htmlQuiz.html") {
+if (window.location.pathname.includes("/assets/pages/htmlQuiz.html")) {
     questions = htmlQuestions
-} else if (window.location.pathname === "/assets/pages/cssQuiz.html") {
+} else if (window.location.pathname.includes("/assets/pages/cssQuiz.html")) {
     questions = cssQuestions
 }
 
