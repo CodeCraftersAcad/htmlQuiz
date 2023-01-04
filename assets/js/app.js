@@ -2,11 +2,10 @@ const quizBody = document.querySelector("#quiz-body");
 let points = 0;
 let chosenAnswer;
 let questions = [];
-console.log(window.location.pathname)
 // change questions depending on which html doc is displayed
-if (window.location.pathname.includes("/assets/pages/htmlQuiz.html")) {
+if (window.location.pathname.includes("htmlQuiz")) {
     questions = htmlQuestions
-} else if (window.location.pathname.includes("/assets/pages/cssQuiz.html")) {
+} else if (window.location.pathname.includes("cssQuiz")) {
     questions = cssQuestions
 }
 
@@ -71,4 +70,3 @@ function checkIfDone(questions) {
     }
 }
 checkIfDone(questions);
-console.log(questions)
