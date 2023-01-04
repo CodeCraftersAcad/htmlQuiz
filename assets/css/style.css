@@ -21,6 +21,11 @@ html {
     overflow-x: hidden;
 }
 
+#home-main {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .question {
     display: flex;
     min-width: 100%;
@@ -33,6 +38,7 @@ html {
 .inner-question {
     padding: 30px 20px;
     border: 1px solid #bbb;
+    width: 40%;
 }
 
 .slideRight {
@@ -65,8 +71,9 @@ footer #contact_email {
         overflow-x: hidden;
     }
 
-    .inner-question {
-        width: 90%;
+    .inner-question,
+    #home-main {
+        width: 95%;
     }
 
     label {
