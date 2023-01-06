@@ -7,6 +7,8 @@ if (window.location.pathname.includes("htmlQuiz")) {
     questions = htmlQuestions
 } else if (window.location.pathname.includes("cssQuiz")) {
     questions = cssQuestions
+} else if (window.location.pathname.includes("jsQuiz")) {
+    questions = jsQuestions
 }
 
 // loops thru answer classes
