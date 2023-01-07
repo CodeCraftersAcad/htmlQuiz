@@ -1,4 +1,5 @@
 const htmlQuestions = [
+    new Question("Fill in the blank", "body", `Which HTML element shows text on the page? <input type="text"/>`),
     new Question(
         `What does HTML stand for?`,
         "Hyper Text Markup Language",
@@ -17,6 +18,7 @@ const htmlQuestions = [
         "Inline",
         ["Block", "None", "Flex", "Inline"]
     ),
+    new Question("Fill in the blank", "title", `The <input type="text"/> element shows in the tab of the web browser?`),
     new Question(
         `Which is the biggest heading?`,
         "h1",
