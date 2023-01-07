@@ -1,4 +1,5 @@
 const cssQuestions = [
+    new Question("Fill in the blank", "style", `Which HTML attribute is for inline css? <input type="text"/>`),
     new Question(
         `How do you access the attribute id="demo" in CSS?`,
         "#demo",
@@ -35,5 +36,7 @@ const cssQuestions = [
         [`style="height: 300px; width: auto;`,
             `style="height: 300pixels; width: auto;`,
             `style="height: 300px; width: scale;`]
-    )
+    ),
+    new Question("Fill in the blank", "box model", `What are the set of rules called that determine how your web page is rendered (2 words)? <input type="text"/>`),
+
 ]

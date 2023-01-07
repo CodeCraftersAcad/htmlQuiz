@@ -15,6 +15,8 @@ if (window.location.pathname.includes("htmlQuiz")) {
 document.addEventListener("click", e => {
     if (e.target.classList.contains("answer")) {
         setChosenAnswer(`${e.target.value}`)
+    } else {
+        setChosenAnswer(e.target.parentElement.firstChild.nextSibling.value)
     }
 });
 

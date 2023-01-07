@@ -41,6 +41,10 @@ html {
     width: 40%;
 }
 
+.inner-question input {
+    padding-left: 5px;
+}
+
 .slideRight {
     transform: translateX(-100%);
     transition: all 4s linear;
