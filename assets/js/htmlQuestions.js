@@ -18,7 +18,7 @@ const htmlQuestions = [
         "Inline",
         ["Block", "None", "Flex", "Inline"]
     ),
-    new Question("Fill in the blank", "title", `The <input type="text"/> element shows in the tab of the web browser?`),
+    new Question("Fill in the blank", "title", `The <input type="text"/> element shows text in the tab of the web browser?`),
     new Question(
         `Which is the biggest heading?`,
         "h1",

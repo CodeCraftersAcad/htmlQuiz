@@ -41,8 +41,9 @@ html {
     width: 40%;
 }
 
-.inner-question input {
+.inner-question.fitb input {
     padding-left: 5px;
+    width: 100px;
 }
 
 .slideRight {

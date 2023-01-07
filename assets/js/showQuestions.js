@@ -29,7 +29,7 @@ function showQuestions(arr, points) {
         } else {
             quizBody.innerHTML += `
             <div class="question">
-                <div class="inner-question">
+                <div class="inner-question fitb">
                     <p class="text-end"><strong>${i + 1}</strong>/ <strong>${arr.length}</strong></p>
                     <h3 class="mb-3">${item.question}</h3>
                     <hr class="my-3"/>
