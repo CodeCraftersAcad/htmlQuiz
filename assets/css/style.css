@@ -21,6 +21,12 @@ html {
     overflow-x: hidden;
 }
 
+#nav-img {
+    height: 40px;
+    width: auto;
+    padding-right: 5px;
+}
+
 #home-main {
     width: 60%;
     margin: 0 auto;
