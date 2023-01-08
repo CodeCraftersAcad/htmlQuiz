@@ -31,6 +31,11 @@ const cssQuestions = [
         ["{ h1 text-align: center; }", "h1 { text-align: center; }", "h1 { text-center: align; }", "h1 { center-align: text; }",]
     ),
     new Question(
+        "Fill in the blank",
+        "154",
+        `What is the width of the bod if the border is 5px, the margins 10px, the padding 12px and the content 50px? <input type="text"/>px`
+    ),
+    new Question(
         `Which is the correct syntax to keep an image at scale with a height of 300 pixels?`,
         `style="height: 300px; width: auto;`,
         [`style="height: 300px; width: auto;`,
