@@ -15,8 +15,13 @@ if (window.location.pathname.includes("htmlQuiz")) {
 document.addEventListener("click", e => {
     if (e.target.classList.contains("answer")) {
         setChosenAnswer(`${e.target.value}`)
-    } else {
+    } else if (e.target.classList.contains("single-fill")) {
         setChosenAnswer(e.target.parentElement.firstChild.nextSibling.value.trim())
+    } else if (e.target.classList.contains("multi-fill")) {
+        const inputs = document.querySelectorAll(".multi-fill-question input")
+        const answers = []
+        inputs.forEach(item => answers.push(item.value.trim()))
+        setChosenAnswer(answers.join(""))
     }
 });
 

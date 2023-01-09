@@ -1,5 +1,5 @@
 const cssQuestions = [
-    new Question("Fill in the blank", "style", `Which HTML attribute is for inline css? <input type="text"/>`),
+    new Question("Fill in the blank", "style", `Which HTML attribute is for inline css? <input type="text"/>`, "singleFill"),
     new Question(
         `How do you access the attribute id="demo" in CSS?`,
         "#demo",
@@ -39,7 +39,8 @@ const cssQuestions = [
     new Question(
         "Fill in the blank",
         "154",
-        `What is the width of the bod if the border is 5px, the margins 10px, the padding 12px and the content 50px? <input type="text"/>px`
+        `What is the width of the bod if the border is 5px, the margins 10px, the padding 12px and the content 50px? <input type="text"/>px`,
+        "singleFill"
     ),
     new Question(
         `Which is the correct syntax to keep an image at scale with a height of 300 pixels?`,
@@ -49,6 +50,6 @@ const cssQuestions = [
             `style="height: 300px; width: scale;`],
         "radio"
     ),
-    new Question("Fill in the blank", "box model", `What are the set of rules called that determine how your web page is rendered (2 words)? <input type="text"/>`),
+    new Question("Fill in the blank", "box model", `What are the set of rules called that determine how your web page is rendered (2 words)? <input type="text"/>`, "singleFill"),
 
 ]

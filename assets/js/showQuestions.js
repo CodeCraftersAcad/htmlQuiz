@@ -2,8 +2,10 @@ function showQuestions(arr) {
     arr.map((item, i) => {
         if (item.qtype === "radio") {
             radioQuestions(arr, item, i)
-        } else {
+        } else if (item.qtype === "singleFill") {
             fillInBlank(arr, item, i);
+        } else if (item.qtype === "multiFill") {
+            multiFillInBlank(arr, item, i);
         }
     })
 }
@@ -46,7 +48,26 @@ function fillInBlank(arr, item, i) {
                         ${item.answerList}
                     </div>
                     <div class="d-grid gap-2 col-6 mx-auto my-3">
-                        <button class="btn btn-primary submit-btn" type="button" value="${item.answer}" data-index="${i + 1}">SUBMIT</button>
+                        <button class="btn btn-primary submit-btn single-fill" type="button" value="${item.answer}" data-index="${i + 1}">SUBMIT</button>
+                    </div>
+                    <p><small>Check out our free coding workshops on <a href="https://parttimedevs.com/freelearning.html" target="_blank">PartTimeDevs.com</a></small></p>
+                </div>
+            </div>
+            `
+}
+
+function multiFillInBlank(arr, item, i) {
+    quizBody.innerHTML += `
+            <div class="question">
+                <div class="inner-question fitb">
+                    <p class="text-end"><strong>${i + 1}</strong>/ <strong>${arr.length}</strong></p>
+                    <h3 class="mb-3">${item.question}</h3>
+                    <hr class="my-3"/>
+                    <div class="multi-fill-question">
+                        ${item.answerList}
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto my-3">
+                        <button class="btn btn-primary submit-btn multi-fill" type="button" value="${item.answer}" data-index="${i + 1}">SUBMIT</button>
                     </div>
                     <p><small>Check out our free coding workshops on <a href="https://parttimedevs.com/freelearning.html" target="_blank">PartTimeDevs.com</a></small></p>
                 </div>
