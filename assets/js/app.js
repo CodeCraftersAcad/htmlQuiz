@@ -73,11 +73,10 @@ function checkIfDone(questions) {
             <div class="inner-question">
                 <h3>GOOD JOB!!! :)</h3>
                 <p>More quizzes and questions to come.</p>
-                <p><a href="/">Go to Home Page</a></p>
+                <p><a href="/ptd_quiz">Go to Home Page</a></p>
             </div>
         </div>
         `
     }
 }
 checkIfDone(questions);
-console.log(window.location.pathname.includes("html"))
