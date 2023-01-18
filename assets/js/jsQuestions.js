@@ -44,5 +44,17 @@ whose value is Sedan:<br/>
         "src",
         ["link", "src", "source", "rel"],
         "radio"
+    ),
+    new Question(
+        "True or false? 3 > 2 > 1 === true",
+        "false",
+        ["true", "false"],
+        "radio"
+    ),
+    new Question(
+        "Which is the correct way to declare a function?",
+        "function myFunction(){}",
+        ["myFunction function{}", "'myFunction' function(){}", "function myFunction(){}"],
+        "radio"
     )
 ]
