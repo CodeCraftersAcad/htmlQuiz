@@ -83,4 +83,12 @@ whose value is Sedan:<br/>
         ["let str = {}", "let str = ''", "let str = ()", "let str = []"],
         "radio"
     ),
+    new Question(
+        "Fill in the blank",
+        "boolean",
+        `In programming what variable type is <code>true</code> or <code>false</code>? A 
+        <input type="text"/>.
+        `,
+        "singleFill"
+    ),
 ]
