@@ -31,7 +31,7 @@ const htmlQuestions = [
     new Question(
         `Fill in the blank`,
         `unordered`,
-        `<img style="display:block; height: 200px; width: auto; margin: 10px auto;" src="/assets/image/ul_list_img.png" alt="UL List type"/>The <code>ul</code> element shown in the image above is called an <input type="text"/> list.`,
+        `<img style="display:block; height: 200px; width: auto; margin: 10px auto;" src="../image/ul_list_img.png" alt="UL List type"/>The <code>ul</code> element shown in the image above is called an <input type="text"/> list.`,
         `singleFill`
     ),
     new Question(
