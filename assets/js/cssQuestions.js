@@ -33,7 +33,7 @@ const cssQuestions = [
     new Question(
         `Fill in the blank`,
         `top`,
-        `<img style="display:block; height: 85px; width: auto; margin: 10px auto;" src="/assets/image/p_tag_margin.png" alt="Paragraph Tag Margin"/>The <code>p</code> element shown in the image above has it's margin set starting at what side of the paragraph <input type="text"/>.`,
+        `<img style="display:block; height: 85px; width: auto; margin: 10px auto;" src="../assets/image/p_tag_margin.png" alt="Paragraph Tag Margin"/>The <code>p</code> element shown in the image above has it's margin set starting at what side of the paragraph <input type="text"/>.`,
         `singleFill`
     ),
     new Question(
