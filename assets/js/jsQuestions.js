@@ -56,5 +56,13 @@ whose value is Sedan:<br/>
         "function myFunction(){}",
         ["myFunction function{}", "'myFunction' function(){}", "function myFunction(){}"],
         "radio"
-    )
+    ),
+    new Question(
+        "Fill in the blank",
+        "bang",
+        `In programming an exclamation point <code>!</code> is called a 
+        <input type="text"/> symbol.
+        `,
+        "singleFill"
+    ),
 ]
