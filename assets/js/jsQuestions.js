@@ -65,4 +65,22 @@ whose value is Sedan:<br/>
         `,
         "singleFill"
     ),
+    new Question(
+        "How is an array defined?",
+        "let arr = []",
+        ["let arr = {}", "let arr = ''", "let arr = ()", "let arr = []"],
+        "radio"
+    ),
+    new Question(
+        "How is an object defined?",
+        "let arr = []",
+        ["let obj = {}", "let obj = ''", "let obj = ()", "let obj = []"],
+        "radio"
+    ),
+    new Question(
+        "How is a string defined?",
+        "let arr = []",
+        ["let str = {}", "let str = ''", "let str = ()", "let str = []"],
+        "radio"
+    ),
 ]
