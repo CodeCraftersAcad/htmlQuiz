@@ -73,13 +73,13 @@ whose value is Sedan:<br/>
     ),
     new Question(
         "How is an object defined?",
-        "let arr = {}",
+        "let obj = {}",
         ["let obj = {}", "let obj = ''", "let obj = ()", "let obj = []"],
         "radio"
     ),
     new Question(
         "How is a string defined?",
-        "let arr = ''",
+        "let str = ''",
         ["let str = {}", "let str = ''", "let str = ()", "let str = []"],
         "radio"
     ),
