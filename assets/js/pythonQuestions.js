@@ -1,5 +1,11 @@
 const pythonQuestions = [
     new Question(
+        "Fill in the blank",
+        "dictionary",
+        `<img style="display:block; height: 45px; width: auto; margin: 10px auto;" src="../image/pythonDTone.png" alt="Python One Data Type"/> What is the data type in the above image? A <input type="text"/>`,
+        "singleFill"
+    ),
+    new Question(
         `Which is a bad variable name?`,
         "var-name",
         ["var-name", "varName", "var_name", "_varname"],
@@ -46,12 +52,6 @@ const pythonQuestions = [
         `upper()`,
         ["upper()", "capital()", "uppercase()", "toUpperCase()"],
         "radio"
-    ),
-    new Question(
-        "Fill in the blank",
-        "dictionary",
-        `<img style="display:block; height: 45px; width: auto; margin: 10px auto;" src="../image/pythonDTone.png" alt="Python One Data Type"/> What is the data type in the above image? A <input type="text"/>`,
-        "singleFill"
     ),
     new Question(
         "Fill in the blank",

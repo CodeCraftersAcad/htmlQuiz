@@ -11,7 +11,8 @@ if (window.location.pathname.includes("htmlQuiz")) {
     questions = jsQuestions
 } else if (window.location.pathname.includes("pythonQuiz")) {
     questions = pythonQuestions
-} else {
+}
+else {
     questions = [];
 }
 
@@ -20,7 +21,14 @@ document.addEventListener("click", e => {
     if (e.target.classList.contains("answer")) {
         setChosenAnswer(`${e.target.value}`)
     } else if (e.target.classList.contains("single-fill")) {
-        setChosenAnswer(e.target.parentElement.firstChild.nextSibling.value.trim())
+        let answer;
+        if (e.target.parentElement.previousSibling?.previousSibling?.firstChild?.nextSibling?.value?.trim()) {
+            answer = e.target.parentElement.previousSibling.previousSibling.firstChild.nextSibling.value.trim()
+        }
+        else if (e.target.parentElement.previousSibling?.previousSibling?.firstChild?.nextSibling?.nextSibling?.nextSibling?.value?.trim()) {
+            answer = e.target.parentElement.previousSibling.previousSibling.firstChild.nextSibling.nextSibling.nextSibling.value.trim()
+        } else answer = ""
+        setChosenAnswer(answer)
     } else if (e.target.classList.contains("multi-fill")) {
         const inputs = document.querySelectorAll(".multi-fill-question input")
         const answers = []
@@ -28,6 +36,11 @@ document.addEventListener("click", e => {
         setChosenAnswer(answers.join(""))
     }
 });
+
+// sets answer to whatever is clicked
+function setRightAnswer(answer) {
+    return answer;
+}
 
 // checks if right answer
 function setChosenAnswer(answer) {
