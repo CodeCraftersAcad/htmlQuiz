@@ -9,6 +9,8 @@ if (window.location.pathname.includes("htmlQuiz")) {
     questions = cssQuestions
 } else if (window.location.pathname.includes("jsQuiz")) {
     questions = jsQuestions
+} else if (window.location.pathname.includes("pythonQuiz")) {
+    questions = pythonQuestions
 } else {
     questions = [];
 }
@@ -26,11 +28,6 @@ document.addEventListener("click", e => {
         setChosenAnswer(answers.join(""))
     }
 });
-
-// sets answer to whatever is clicked
-function setRightAnswer(answer) {
-    return answer;
-}
 
 // checks if right answer
 function setChosenAnswer(answer) {
