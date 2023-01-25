@@ -22,13 +22,8 @@ document.addEventListener("click", e => {
         setChosenAnswer(`${e.target.value}`)
     } else if (e.target.classList.contains("single-fill")) {
         let answer;
-        if (e.target.parentElement.previousSibling?.previousSibling?.firstChild?.nextSibling?.value?.trim()) {
-            answer = e.target.parentElement.previousSibling.previousSibling.firstChild.nextSibling.value.trim()
-        }
-        else if (e.target.parentElement.previousSibling?.previousSibling?.firstChild?.nextSibling?.nextSibling?.nextSibling?.value?.trim()) {
-            answer = e.target.parentElement.previousSibling.previousSibling.firstChild.nextSibling.nextSibling.nextSibling.value.trim()
-        } else answer = ""
-        setChosenAnswer(answer)
+        answer = e.target.parentElement.parentElement.querySelector("input");
+        setChosenAnswer(answer.value)
     } else if (e.target.classList.contains("multi-fill")) {
         const inputs = document.querySelectorAll(".multi-fill-question input")
         const answers = []
